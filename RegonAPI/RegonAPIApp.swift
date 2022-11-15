@@ -11,7 +11,9 @@ import SwiftUI
 struct RegonAPIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                ListView(companies:Company.sampleData)
+            }
         }
     }
 }

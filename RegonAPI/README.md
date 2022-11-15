@@ -16,17 +16,19 @@ W aplikacji będzie można wyszukiwać polskie firmy i informacje o nich.
 ## Wymagania
 
 Aplikacja potrafi wyszukać firmę po numerze NIP lub numerze REGON i wyświetlić podstawowe dane tj. Data założenia, udziałowcy i kapitał zakładowy.
+W podgladzie firmy, wyswietla sie mapa na ktorej oznaczony jest adres firmy
 
 ## Wykorzystane narzędzia
 
 ### Framework(i) iOS SDK
 
 SwiftUI
+MapKit
 
 ### Frameworki/biblioteki zewnętrzne
 
 RxSwift https://github.com/ReactiveX/RxSwift
-AFNetworking https://github.com/AFNetworking/AFNetworking
+Alamofire https://github.com/Alamofire/Alamofire
 Realm https://github.com/realm/realm-swift
 ## Dane
 
