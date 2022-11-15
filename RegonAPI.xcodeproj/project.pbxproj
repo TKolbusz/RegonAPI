@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ACDCB7432923900000D37939 /* RegonAPIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDCB7422923900000D37939 /* RegonAPIApp.swift */; };
+		ACDCB7452923900000D37939 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDCB7442923900000D37939 /* ContentView.swift */; };
+		ACDCB7472923900100D37939 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACDCB7462923900100D37939 /* Assets.xcassets */; };
+		ACDCB74B2923900100D37939 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACDCB74A2923900100D37939 /* Preview Assets.xcassets */; };
+		ACDCB7552923900100D37939 /* RegonAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDCB7542923900100D37939 /* RegonAPITests.swift */; };
+		ACDCB75F2923900100D37939 /* RegonAPIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDCB75E2923900100D37939 /* RegonAPIUITests.swift */; };
+		ACDCB7612923900100D37939 /* RegonAPIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDCB7602923900100D37939 /* RegonAPIUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACDCB7512923900100D37939 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACDCB7372923900000D37939 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACDCB73E2923900000D37939;
+			remoteInfo = RegonAPI;
+		};
+		ACDCB75B2923900100D37939 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACDCB7372923900000D37939 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACDCB73E2923900000D37939;
+			remoteInfo = RegonAPI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ACDCB73F2923900000D37939 /* RegonAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RegonAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACDCB7422923900000D37939 /* RegonAPIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegonAPIApp.swift; sourceTree = "<group>"; };
+		ACDCB7442923900000D37939 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ACDCB7462923900100D37939 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACDCB7482923900100D37939 /* RegonAPI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RegonAPI.entitlements; sourceTree = "<group>"; };
+		ACDCB74A2923900100D37939 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ACDCB7502923900100D37939 /* RegonAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RegonAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACDCB7542923900100D37939 /* RegonAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegonAPITests.swift; sourceTree = "<group>"; };
+		ACDCB75A2923900100D37939 /* RegonAPIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RegonAPIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACDCB75E2923900100D37939 /* RegonAPIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegonAPIUITests.swift; sourceTree = "<group>"; };
+		ACDCB7602923900100D37939 /* RegonAPIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegonAPIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ACDCB76D2923902500D37939 /* description.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = description.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACDCB73C2923900000D37939 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACDCB74D2923900100D37939 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACDCB7572923900100D37939 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ACDCB7362923900000D37939 = {
+			isa = PBXGroup;
+			children = (
+				ACDCB7412923900000D37939 /* RegonAPI */,
+				ACDCB7532923900100D37939 /* RegonAPITests */,
+				ACDCB75D2923900100D37939 /* RegonAPIUITests */,
+				ACDCB7402923900000D37939 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ACDCB7402923900000D37939 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACDCB73F2923900000D37939 /* RegonAPI.app */,
+				ACDCB7502923900100D37939 /* RegonAPITests.xctest */,
+				ACDCB75A2923900100D37939 /* RegonAPIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACDCB7412923900000D37939 /* RegonAPI */ = {
+			isa = PBXGroup;
+			children = (
+				ACDCB7422923900000D37939 /* RegonAPIApp.swift */,
+				ACDCB7442923900000D37939 /* ContentView.swift */,
+				ACDCB7462923900100D37939 /* Assets.xcassets */,
+				ACDCB7482923900100D37939 /* RegonAPI.entitlements */,
+				ACDCB7492923900100D37939 /* Preview Content */,
+				ACDCB76D2923902500D37939 /* description.md */,
+			);
+			path = RegonAPI;
+			sourceTree = "<group>";
+		};
+		ACDCB7492923900100D37939 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ACDCB74A2923900100D37939 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ACDCB7532923900100D37939 /* RegonAPITests */ = {
+			isa = PBXGroup;
+			children = (
+				ACDCB7542923900100D37939 /* RegonAPITests.swift */,
+			);
+			path = RegonAPITests;
+			sourceTree = "<group>";
+		};
+		ACDCB75D2923900100D37939 /* RegonAPIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ACDCB75E2923900100D37939 /* RegonAPIUITests.swift */,
+				ACDCB7602923900100D37939 /* RegonAPIUITestsLaunchTests.swift */,
+			);
+			path = RegonAPIUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACDCB73E2923900000D37939 /* RegonAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACDCB7642923900100D37939 /* Build configuration list for PBXNativeTarget "RegonAPI" */;
+			buildPhases = (
+				ACDCB73B2923900000D37939 /* Sources */,
+				ACDCB73C2923900000D37939 /* Frameworks */,
+				ACDCB73D2923900000D37939 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RegonAPI;
+			productName = RegonAPI;
+			productReference = ACDCB73F2923900000D37939 /* RegonAPI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ACDCB74F2923900100D37939 /* RegonAPITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACDCB7672923900100D37939 /* Build configuration list for PBXNativeTarget "RegonAPITests" */;
+			buildPhases = (
+				ACDCB74C2923900100D37939 /* Sources */,
+				ACDCB74D2923900100D37939 /* Frameworks */,
+				ACDCB74E2923900100D37939 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACDCB7522923900100D37939 /* PBXTargetDependency */,
+			);
+			name = RegonAPITests;
+			productName = RegonAPITests;
+			productReference = ACDCB7502923900100D37939 /* RegonAPITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ACDCB7592923900100D37939 /* RegonAPIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACDCB76A2923900100D37939 /* Build configuration list for PBXNativeTarget "RegonAPIUITests" */;
+			buildPhases = (
+				ACDCB7562923900100D37939 /* Sources */,
+				ACDCB7572923900100D37939 /* Frameworks */,
+				ACDCB7582923900100D37939 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACDCB75C2923900100D37939 /* PBXTargetDependency */,
+			);
+			name = RegonAPIUITests;
+			productName = RegonAPIUITests;
+			productReference = ACDCB75A2923900100D37939 /* RegonAPIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACDCB7372923900000D37939 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					ACDCB73E2923900000D37939 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					ACDCB74F2923900100D37939 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = ACDCB73E2923900000D37939;
+					};
+					ACDCB7592923900100D37939 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = ACDCB73E2923900000D37939;
+					};
+				};
+			};
+			buildConfigurationList = ACDCB73A2923900000D37939 /* Build configuration list for PBXProject "RegonAPI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ACDCB7362923900000D37939;
+			productRefGroup = ACDCB7402923900000D37939 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACDCB73E2923900000D37939 /* RegonAPI */,
+				ACDCB74F2923900100D37939 /* RegonAPITests */,
+				ACDCB7592923900100D37939 /* RegonAPIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACDCB73D2923900000D37939 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACDCB74B2923900100D37939 /* Preview Assets.xcassets in Resources */,
+				ACDCB7472923900100D37939 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACDCB74E2923900100D37939 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACDCB7582923900100D37939 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACDCB73B2923900000D37939 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACDCB7452923900000D37939 /* ContentView.swift in Sources */,
+				ACDCB7432923900000D37939 /* RegonAPIApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACDCB74C2923900100D37939 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACDCB7552923900100D37939 /* RegonAPITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACDCB7562923900100D37939 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACDCB7612923900100D37939 /* RegonAPIUITestsLaunchTests.swift in Sources */,
+				ACDCB75F2923900100D37939 /* RegonAPIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACDCB7522923900100D37939 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACDCB73E2923900000D37939 /* RegonAPI */;
+			targetProxy = ACDCB7512923900100D37939 /* PBXContainerItemProxy */;
+		};
+		ACDCB75C2923900100D37939 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACDCB73E2923900000D37939 /* RegonAPI */;
+			targetProxy = ACDCB75B2923900100D37939 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		ACDCB7622923900100D37939 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ACDCB7632923900100D37939 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		ACDCB7652923900100D37939 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RegonAPI/RegonAPI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RegonAPI/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tkolbusz.RegonAPI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACDCB7662923900100D37939 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RegonAPI/RegonAPI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RegonAPI/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tkolbusz.RegonAPI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ACDCB7682923900100D37939 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tkolbusz.RegonAPITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RegonAPI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RegonAPI";
+			};
+			name = Debug;
+		};
+		ACDCB7692923900100D37939 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tkolbusz.RegonAPITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RegonAPI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RegonAPI";
+			};
+			name = Release;
+		};
+		ACDCB76B2923900100D37939 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tkolbusz.RegonAPIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RegonAPI;
+			};
+			name = Debug;
+		};
+		ACDCB76C2923900100D37939 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tkolbusz.RegonAPIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RegonAPI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACDCB73A2923900000D37939 /* Build configuration list for PBXProject "RegonAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACDCB7622923900100D37939 /* Debug */,
+				ACDCB7632923900100D37939 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACDCB7642923900100D37939 /* Build configuration list for PBXNativeTarget "RegonAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACDCB7652923900100D37939 /* Debug */,
+				ACDCB7662923900100D37939 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACDCB7672923900100D37939 /* Build configuration list for PBXNativeTarget "RegonAPITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACDCB7682923900100D37939 /* Debug */,
+				ACDCB7692923900100D37939 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACDCB76A2923900100D37939 /* Build configuration list for PBXNativeTarget "RegonAPIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACDCB76B2923900100D37939 /* Debug */,
+				ACDCB76C2923900100D37939 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ACDCB7372923900000D37939 /* Project object */;
+}
