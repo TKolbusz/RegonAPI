@@ -1,4 +1,6 @@
 import SwiftUI
+import MapKit
+import CoreLocation
 
 struct DetailView: View {
     let company: Company
@@ -27,9 +29,17 @@ struct DetailView: View {
                            ForEach(company.shareholders) { shareholder in
                                Label(shareholder.name, systemImage: "person")
                            }
-                       }        }
+                       }
+            Section(header: Text("Address")) {
+                Map(coordinateRegion: .constant(MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: company.addressLat, longitude:company.addressLong), span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))), interactionModes: [])
+                    .frame(width: 400, height: 300)
+                
+            }
+        }
         .navigationTitle(company.name)
     }
+    
+
 }
 
 struct DetailView_Previews: PreviewProvider {

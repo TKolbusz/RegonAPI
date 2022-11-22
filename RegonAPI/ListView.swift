@@ -1,10 +1,10 @@
 import SwiftUI
 
 struct ListView : View {
-    let companies: [Company]
+    @ObjectBinding var presenter: ProductionPostsPresenter
     var body: some View{
         List {
-            ForEach(companies){ company in
+            ForEach(presenter.companies){ company in
                 NavigationLink(destination:DetailView(company:company)){
                     CardView(company:company)
                 }

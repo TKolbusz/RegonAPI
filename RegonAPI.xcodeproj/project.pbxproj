@@ -7,8 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC16C899292CCD5600AF69C1 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC16C895292CCD5600AF69C1 /* ListView.swift */; };
+		AC16C89A292CCD5600AF69C1 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC16C896292CCD5600AF69C1 /* CardView.swift */; };
+		AC16C89B292CCD5600AF69C1 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC16C897292CCD5600AF69C1 /* Company.swift */; };
+		AC16C89C292CCD5600AF69C1 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC16C898292CCD5600AF69C1 /* DetailView.swift */; };
+		AC16C8A2292CD49900AF69C1 /* ViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC16C8A1292CD49900AF69C1 /* ViewPresenter.swift */; };
+		AC16C8A4292CD4D200AF69C1 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC16C8A3292CD4D200AF69C1 /* DataService.swift */; };
+		AC16C8A6292CD50200AF69C1 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC16C8A5292CD50200AF69C1 /* API.swift */; };
+		AC16C8A8292CD51600AF69C1 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC16C8A7292CD51600AF69C1 /* Database.swift */; };
 		ACDCB7432923900000D37939 /* RegonAPIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDCB7422923900000D37939 /* RegonAPIApp.swift */; };
-		ACDCB7452923900000D37939 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDCB7442923900000D37939 /* ContentView.swift */; };
 		ACDCB7472923900100D37939 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACDCB7462923900100D37939 /* Assets.xcassets */; };
 		ACDCB74B2923900100D37939 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACDCB74A2923900100D37939 /* Preview Assets.xcassets */; };
 		ACDCB7552923900100D37939 /* RegonAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDCB7542923900100D37939 /* RegonAPITests.swift */; };
@@ -34,9 +41,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC16C895292CCD5600AF69C1 /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		AC16C896292CCD5600AF69C1 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		AC16C897292CCD5600AF69C1 /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		AC16C898292CCD5600AF69C1 /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		AC16C8A1292CD49900AF69C1 /* ViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPresenter.swift; sourceTree = "<group>"; };
+		AC16C8A3292CD4D200AF69C1 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		AC16C8A5292CD50200AF69C1 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		AC16C8A7292CD51600AF69C1 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		ACDCB73F2923900000D37939 /* RegonAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RegonAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACDCB7422923900000D37939 /* RegonAPIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegonAPIApp.swift; sourceTree = "<group>"; };
-		ACDCB7442923900000D37939 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ACDCB7462923900100D37939 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACDCB7482923900100D37939 /* RegonAPI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RegonAPI.entitlements; sourceTree = "<group>"; };
 		ACDCB74A2923900100D37939 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -96,12 +110,19 @@
 		ACDCB7412923900000D37939 /* RegonAPI */ = {
 			isa = PBXGroup;
 			children = (
+				AC16C896292CCD5600AF69C1 /* CardView.swift */,
+				AC16C897292CCD5600AF69C1 /* Company.swift */,
+				AC16C898292CCD5600AF69C1 /* DetailView.swift */,
+				AC16C895292CCD5600AF69C1 /* ListView.swift */,
 				ACDCB7422923900000D37939 /* RegonAPIApp.swift */,
-				ACDCB7442923900000D37939 /* ContentView.swift */,
 				ACDCB7462923900100D37939 /* Assets.xcassets */,
 				ACDCB7482923900100D37939 /* RegonAPI.entitlements */,
 				ACDCB7492923900100D37939 /* Preview Content */,
 				ACDCB76D2923902500D37939 /* description.md */,
+				AC16C8A1292CD49900AF69C1 /* ViewPresenter.swift */,
+				AC16C8A3292CD4D200AF69C1 /* DataService.swift */,
+				AC16C8A5292CD50200AF69C1 /* API.swift */,
+				AC16C8A7292CD51600AF69C1 /* Database.swift */,
 			);
 			path = RegonAPI;
 			sourceTree = "<group>";
@@ -261,8 +282,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACDCB7452923900000D37939 /* ContentView.swift in Sources */,
+				AC16C8A2292CD49900AF69C1 /* ViewPresenter.swift in Sources */,
+				AC16C8A4292CD4D200AF69C1 /* DataService.swift in Sources */,
+				AC16C89C292CCD5600AF69C1 /* DetailView.swift in Sources */,
 				ACDCB7432923900000D37939 /* RegonAPIApp.swift in Sources */,
+				AC16C89A292CCD5600AF69C1 /* CardView.swift in Sources */,
+				AC16C89B292CCD5600AF69C1 /* Company.swift in Sources */,
+				AC16C8A8292CD51600AF69C1 /* Database.swift in Sources */,
+				AC16C8A6292CD50200AF69C1 /* API.swift in Sources */,
+				AC16C899292CCD5600AF69C1 /* ListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
