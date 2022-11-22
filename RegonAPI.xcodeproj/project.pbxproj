@@ -21,6 +21,18 @@
 		ACDCB7552923900100D37939 /* RegonAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDCB7542923900100D37939 /* RegonAPITests.swift */; };
 		ACDCB75F2923900100D37939 /* RegonAPIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDCB75E2923900100D37939 /* RegonAPIUITests.swift */; };
 		ACDCB7612923900100D37939 /* RegonAPIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDCB7602923900100D37939 /* RegonAPIUITestsLaunchTests.swift */; };
+		ACEA46A0292CE15A000EC881 /* Alamofire.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEA469F292CE159000EC881 /* Alamofire.xcframework */; };
+		ACEA46A1292CE15A000EC881 /* Alamofire.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACEA469F292CE159000EC881 /* Alamofire.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ACEA46A4292CE1A2000EC881 /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEA46A3292CE1A2000EC881 /* RxSwift.xcframework */; };
+		ACEA46A5292CE1A2000EC881 /* RxSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACEA46A3292CE1A2000EC881 /* RxSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ACEA46A7292CE1AB000EC881 /* RxCocoa.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEA46A6292CE1AB000EC881 /* RxCocoa.xcframework */; };
+		ACEA46A8292CE1AB000EC881 /* RxCocoa.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACEA46A6292CE1AB000EC881 /* RxCocoa.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ACEA46AA292CE746000EC881 /* RxRelay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEA46A9292CE746000EC881 /* RxRelay.xcframework */; };
+		ACEA46AB292CE746000EC881 /* RxRelay.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACEA46A9292CE746000EC881 /* RxRelay.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ACEA46AD292CE756000EC881 /* RxBlocking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEA46AC292CE756000EC881 /* RxBlocking.xcframework */; };
+		ACEA46AE292CE756000EC881 /* RxBlocking.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACEA46AC292CE756000EC881 /* RxBlocking.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ACEA46EE292CEE96000EC881 /* core.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACEA46EC292CEE96000EC881 /* core.xcdatamodeld */; };
+		ACEA46F0292CF015000EC881 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEA46EF292CF015000EC881 /* PersistenceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +51,24 @@
 			remoteInfo = RegonAPI;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ACEA46A2292CE15A000EC881 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				ACEA46A1292CE15A000EC881 /* Alamofire.xcframework in Embed Frameworks */,
+				ACEA46AB292CE746000EC881 /* RxRelay.xcframework in Embed Frameworks */,
+				ACEA46A5292CE1A2000EC881 /* RxSwift.xcframework in Embed Frameworks */,
+				ACEA46AE292CE756000EC881 /* RxBlocking.xcframework in Embed Frameworks */,
+				ACEA46A8292CE1AB000EC881 /* RxCocoa.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AC16C895292CCD5600AF69C1 /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
@@ -60,6 +90,14 @@
 		ACDCB75E2923900100D37939 /* RegonAPIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegonAPIUITests.swift; sourceTree = "<group>"; };
 		ACDCB7602923900100D37939 /* RegonAPIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegonAPIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		ACDCB76D2923902500D37939 /* description.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = description.md; sourceTree = "<group>"; };
+		ACEA469F292CE159000EC881 /* Alamofire.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Alamofire.xcframework; path = Carthage/Build/Alamofire.xcframework; sourceTree = "<group>"; };
+		ACEA46A3292CE1A2000EC881 /* RxSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxSwift.xcframework; path = Carthage/Build/RxSwift.xcframework; sourceTree = "<group>"; };
+		ACEA46A6292CE1AB000EC881 /* RxCocoa.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxCocoa.xcframework; path = Carthage/Build/RxCocoa.xcframework; sourceTree = "<group>"; };
+		ACEA46A9292CE746000EC881 /* RxRelay.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxRelay.xcframework; path = Carthage/Build/RxRelay.xcframework; sourceTree = "<group>"; };
+		ACEA46AC292CE756000EC881 /* RxBlocking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxBlocking.xcframework; path = Carthage/Build/RxBlocking.xcframework; sourceTree = "<group>"; };
+		ACEA46EB292CEE96000EC881 /* core.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = core.entitlements; sourceTree = "<group>"; };
+		ACEA46ED292CEE96000EC881 /* core.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = core.xcdatamodel; sourceTree = "<group>"; };
+		ACEA46EF292CF015000EC881 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +105,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACEA46A0292CE15A000EC881 /* Alamofire.xcframework in Frameworks */,
+				ACEA46AA292CE746000EC881 /* RxRelay.xcframework in Frameworks */,
+				ACEA46A4292CE1A2000EC881 /* RxSwift.xcframework in Frameworks */,
+				ACEA46AD292CE756000EC881 /* RxBlocking.xcframework in Frameworks */,
+				ACEA46A7292CE1AB000EC881 /* RxCocoa.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +137,7 @@
 				ACDCB7532923900100D37939 /* RegonAPITests */,
 				ACDCB75D2923900100D37939 /* RegonAPIUITests */,
 				ACDCB7402923900000D37939 /* Products */,
+				ACEA469E292CE159000EC881 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +154,8 @@
 		ACDCB7412923900000D37939 /* RegonAPI */ = {
 			isa = PBXGroup;
 			children = (
+				ACEA46EB292CEE96000EC881 /* core.entitlements */,
+				ACEA46EC292CEE96000EC881 /* core.xcdatamodeld */,
 				AC16C896292CCD5600AF69C1 /* CardView.swift */,
 				AC16C897292CCD5600AF69C1 /* Company.swift */,
 				AC16C898292CCD5600AF69C1 /* DetailView.swift */,
@@ -123,6 +169,7 @@
 				AC16C8A3292CD4D200AF69C1 /* DataService.swift */,
 				AC16C8A5292CD50200AF69C1 /* API.swift */,
 				AC16C8A7292CD51600AF69C1 /* Database.swift */,
+				ACEA46EF292CF015000EC881 /* PersistenceController.swift */,
 			);
 			path = RegonAPI;
 			sourceTree = "<group>";
@@ -152,6 +199,18 @@
 			path = RegonAPIUITests;
 			sourceTree = "<group>";
 		};
+		ACEA469E292CE159000EC881 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACEA46AC292CE756000EC881 /* RxBlocking.xcframework */,
+				ACEA46A9292CE746000EC881 /* RxRelay.xcframework */,
+				ACEA46A6292CE1AB000EC881 /* RxCocoa.xcframework */,
+				ACEA46A3292CE1A2000EC881 /* RxSwift.xcframework */,
+				ACEA469F292CE159000EC881 /* Alamofire.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -162,6 +221,7 @@
 				ACDCB73B2923900000D37939 /* Sources */,
 				ACDCB73C2923900000D37939 /* Frameworks */,
 				ACDCB73D2923900000D37939 /* Resources */,
+				ACEA46A2292CE15A000EC881 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -282,9 +342,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACEA46EE292CEE96000EC881 /* core.xcdatamodeld in Sources */,
 				AC16C8A2292CD49900AF69C1 /* ViewPresenter.swift in Sources */,
 				AC16C8A4292CD4D200AF69C1 /* DataService.swift in Sources */,
 				AC16C89C292CCD5600AF69C1 /* DetailView.swift in Sources */,
+				ACEA46F0292CF015000EC881 /* PersistenceController.swift in Sources */,
 				ACDCB7432923900000D37939 /* RegonAPIApp.swift in Sources */,
 				AC16C89A292CCD5600AF69C1 /* CardView.swift in Sources */,
 				AC16C89B292CCD5600AF69C1 /* Company.swift in Sources */,
@@ -634,6 +696,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ACEA46EC292CEE96000EC881 /* core.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ACEA46ED292CEE96000EC881 /* core.xcdatamodel */,
+			);
+			currentVersion = ACEA46ED292CEE96000EC881 /* core.xcdatamodel */;
+			path = core.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = ACDCB7372923900000D37939 /* Project object */;
 }

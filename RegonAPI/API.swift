@@ -20,19 +20,15 @@ struct API {
             }
         }
     }*/
-    private static var URL = "http://lrm.local/api/admin/applications"
-    func getCompanies(search:String) -> Maybe<Company> {
+    private static var URL = "http://test.com"
+    func getCompanies(search:String) -> Observable<[Company]> {
         if(search.isEmpty) {
-            return Maybe.never()
+            return Observable.never()
         }
         if(API.URL.contains("http")){
             let data = Company.sampleData
-            let comp :Company! = data.first{ cmp in cmp.name.contains(search) || cmp.taxIdNo.contains(search)}
-            if(comp != nil){
-                return Maybe.just(comp).delay(RxTimeInterval.seconds(3), scheduler: MainScheduler.instance)
-            }else{
-                return Maybe.never()
-            }
+            let companies :[Company] = data.filter{ cmp in cmp.name.contains(search) || cmp.taxIdNo.contains(search)}
+            return Observable.just(companies).delay(RxTimeInterval.seconds(3), scheduler: MainScheduler.instance)
         }
         let serializer = DataResponseSerializer(emptyResponseCodes:Set([200,204,205]))
         AF.request(API.URL, method:.get).uploadProgress{progress in }
@@ -50,6 +46,6 @@ struct API {
                     }
                 }
 
-        return Maybe.never()
+        return Observable.never()
     }
 }

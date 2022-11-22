@@ -16,12 +16,6 @@ struct CardView: View {
                         .font(.headline)
                         .accessibilityAddTraits(.isHeader)
                     Spacer()
-                    HStack {
-                        Label("\(company.shareholders.count)", systemImage: "person.3")
-                            .accessibilityLabel("\(company.shareholders.count) shareholders")
-                        Spacer()
-                        Label("\(company.taxIdNo)", systemImage: "clock")
-                    }
                     .font(.caption)
                 }
     }

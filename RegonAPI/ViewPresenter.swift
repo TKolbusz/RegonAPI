@@ -1,7 +1,6 @@
 
 import Foundation
 import RxSwift
-import RxCocoa
 import SwiftUI
 import Combine
 import CoreLocation
@@ -11,24 +10,26 @@ protocol ViewPresenter {
     var companies: [Company] { get }
 }
 
-final class ProductionViewPresenter: ViewPresenter, BindableObject {
-    var items: [PostsListItem] = []
-    var isOffline: Bool = false
+final class ProductionViewPresenter: ViewPresenter, ObservableObject {
+
+    @Published var companies: [Company] = []
     
-    private let interactor: PostsInteractor
+    private let dataService:DataService
     
-    init(interactor: PostsInteractor) {
-        self.interactor = interactor
-        self.populate()
+    init(dataService: DataService) {
+        self.dataService = dataService
+        self.find(search:"")
     }
     
     // Populate list of items from RxSwift model and let SwiftUI view know about it
     internal func find(search:String) {
-        dataService.getCompanies(search)
+        debugPrint("searching for " + search)
+        dataService.getCompanies(search:search)
             .subscribeOn(SerialDispatchQueueScheduler(qos: .background))
             .observeOn(MainScheduler.instance)
             .subscribe(onNext: { [weak self] companies in
-                self?.items = items
+                debugPrint("found " + String(companies.count))
+                self?.companies = companies
                // self?.isOffline = false
                 self?.didChange.send()
             }, onError: { [weak self] error in
@@ -49,7 +50,7 @@ final class ProductionViewPresenter: ViewPresenter, BindableObject {
             let placemark = placemarks?.first
             let lat = placemark?.location?.coordinate.latitude
             let lon = placemark?.location?.coordinate.longitude
-            print("Lat: \(lat), Lon: \(lon)")
+            //print("Lat: \(lat), Lon: \(lon)")
         }
         return Observable.empty()
     }

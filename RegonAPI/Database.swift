@@ -2,14 +2,17 @@
 
 import Foundation
 import RxSwift
+import CoreData
 
 struct Database {
-    func getCompanies(search:String) -> Maybe<Company> {
-        let comp = Company.sampleData[0]
-        return Maybe.just(comp).delay(RxTimeInterval.seconds(4), scheduler: MainScheduler.instance)
+    //@Environment(\.managedObjectContext) private var viewContext
+    
+    func getCompanies(search:String) -> Observable<[Company]> {
+        let companies = Company.sampleData
+        return Observable.just(companies).delay(RxTimeInterval.seconds(4), scheduler: MainScheduler.instance)
     }
 
-    func save(company:Company) ->Completable {
+    func save(companies:[Company]) ->Completable {
         Completable.deferred {
             debugPrint("saving company")
             return Completable.empty()
