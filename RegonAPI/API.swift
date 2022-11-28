@@ -20,32 +20,35 @@ struct API {
             }
         }
     }*/
-    private static var URL = "http://test.com"
+    private static var URL = "https://rejestr.io/api/v2/org"
     func getCompanies(search:String) -> Observable<[Company]> {
         if(search.isEmpty) {
-            return Observable.never()
+            return Observable.just([])
         }
-        if(API.URL.contains("http")){
-            let data = Company.sampleData
-            let companies :[Company] = data.filter{ cmp in cmp.name.contains(search) || cmp.taxIdNo.contains(search)}
-            return Observable.just(companies).delay(RxTimeInterval.seconds(3), scheduler: MainScheduler.instance)
+        return Observable.create{ observer in
+            let request = AF.request(API.URL + "?nazwa=" + search, method:.get)
+            request.responseJSON{
+                (response) in
+                if let status = response.response?.statusCode {
+                    switch(status){
+                        case 201:
+                            print("example success")
+                        default:
+                            print("error with response status: \(status)")
+                                    }
+                                }
+                //to get JSON return value
+                            if let result = response.result.value {
+                                let JSON = result as! NSDictionary
+                                print(JSON)
+                            }
+            }
+            let companies = [Company.sampleData[0]]
+            
+            observer.onNext(companies)
+            return Disposables.create{
+                request.cancel()
+            }
         }
-        let serializer = DataResponseSerializer(emptyResponseCodes:Set([200,204,205]))
-        AF.request(API.URL, method:.get).uploadProgress{progress in }
-                .response(responseSerializer: serializer){
-                    response in
-                    if(response.error==nil){
-                        var responseString:String!
-                        if(response.data != nil){
-                            responseString = String(bytes:response.data!,encoding: .utf8)
-                        }else{
-                            responseString = response.response?.description
-                        }
-                        print(responseString ?? "empty")
-                        print(response.response?.statusCode)
-                    }
-                }
-
-        return Observable.never()
     }
 }
