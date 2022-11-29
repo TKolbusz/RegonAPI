@@ -44,12 +44,11 @@ struct API {
                         
                         if let results = json["wyniki"] as? [[String:Any]] {
                             for result in results {
-                                let name = (result["nazwy"] as? [[String:Any]])
-                                let nameFull = name["pelna"]
-                                let taxIdNo = result["numery"]["nip"]
-                                let registrationDate = result["krs_wpisy"]["pierwszy_data"]
-                                let address = result["krs_adresy"]
-                                let ceo = result["glowna_osoba"]["imiona_i_nazwisko"]
+                                let name = (result["nazwy"] as? NSDictionary)?["pelna"]
+                                let taxIdNo = (result["numery"] as? NSDictionary)?["nip"]
+                                let registrationDate = (result["krs_wpisy"] as? NSDictionary)?["pierwszy_data"]
+                                let address = result["adres"]
+                                let ceo = (result["glowna_osoba"] as?NSDictionary)?["imiona_i_nazwisko"]
                                 
                                 companies.append(Company(
                                     name:"",
