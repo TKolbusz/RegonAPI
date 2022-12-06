@@ -1,8 +1,8 @@
 
 # Regon API - iOS
 
-![Screen Shot 2022-12-06 at 11 14 50](https://user-images.githubusercontent.com/10707925/205885927-0cc74815-e609-41bc-b757-a6e9c2ba1587.png)
-![Screen Shot 2022-12-06 at 11 14 22](https://user-images.githubusercontent.com/10707925/205885877-36e4586d-6f2b-4b67-a29b-6a5e372ca841.png)
+![Zrzut ekranu 2022-12-6 o 11 37 20](https://user-images.githubusercontent.com/10707925/205890570-6db28f3e-cab6-451c-80e4-bdc7532a5ae9.png)
+![Zrzut ekranu 2022-12-6 o 11 44 04](https://user-images.githubusercontent.com/10707925/205890584-89afc769-57bd-48c1-a9e0-6497e1719561.png)
 
 ## Autor 
 
