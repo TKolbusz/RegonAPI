@@ -8,8 +8,9 @@ struct Database {
     //@Environment(\.managedObjectContext) private var viewContext
     
     func getCompanies(search:String) -> Observable<[Company]> {
-        let companies = Company.sampleData
-        return Observable.just(companies).delay(RxTimeInterval.seconds(4), scheduler: MainScheduler.instance)
+       // let companies = Company.sampleData
+       // return Observable.just(companies).delay(RxTimeInterval.seconds(4), scheduler: MainScheduler.instance)
+        return Observable.never()
     }
 
     func save(companies:[Company]) ->Completable {

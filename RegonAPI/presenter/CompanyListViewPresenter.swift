@@ -10,7 +10,7 @@ protocol ViewPresenter {
     var companies: [Company] { get }
 }
 
-final class ProductionViewPresenter: ViewPresenter, ObservableObject {
+final class CompanyListViewPresenter: ViewPresenter, ObservableObject {
 
     @Published var companies: [Company] = []
     
@@ -21,7 +21,6 @@ final class ProductionViewPresenter: ViewPresenter, ObservableObject {
         self.find(search:"")
     }
     
-    // Populate list of items from RxSwift model and let SwiftUI view know about it
     internal func find(search:String) {
         debugPrint("searching for " + search)
         dataService.getCompanies(search:search)
@@ -38,20 +37,7 @@ final class ProductionViewPresenter: ViewPresenter, ObservableObject {
             })
             .disposed(by: self.disposeBag)
     }
+    
     var didChange = PassthroughSubject<Void, Never>()
     private let disposeBag = DisposeBag()
-
-    // Get details associated with each post, preserving order for later sorting
-    private func mergeDetails(_ companies: [Company]) -> Observable<[Company]> {
-   
-        var geocoder = CLGeocoder()
-        geocoder.geocodeAddressString("your address") {
-            placemarks, error in
-            let placemark = placemarks?.first
-            let lat = placemark?.location?.coordinate.latitude
-            let lon = placemark?.location?.coordinate.longitude
-            //print("Lat: \(lat), Lon: \(lon)")
-        }
-        return Observable.empty()
-    }
 }

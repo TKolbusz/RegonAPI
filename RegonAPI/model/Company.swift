@@ -1,5 +1,6 @@
 
 import SwiftUI
+import CoreLocation
 
 struct Company: Identifiable{
     var id: UUID
@@ -21,7 +22,19 @@ struct Company: Identifiable{
         self.addressLong = addressLong
         self.ceo = ceo
     }
-
+    
+    func withGeoLocation(coords:CLLocationCoordinate2D?) -> Company {
+        return Company(
+            id: self.id,
+            name: self.name,
+            taxIdNo: self.taxIdNo,
+            registrationDate: self.registrationDate,
+            addressString: self.addressString,
+            addressLat :coords?.latitude ?? 0,
+            addressLong: coords?.longitude ?? 0,
+            ceo:self.ceo
+        )
+    }
 }
 extension Company{
     

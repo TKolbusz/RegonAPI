@@ -8,6 +8,9 @@
             <PersistentString
                value = "results[0]">
             </PersistentString>
+            <PersistentString
+               value = "String(describing:name as! String)">
+            </PersistentString>
          </PersistentStrings>
       </ContextState>
    </ContextStates>

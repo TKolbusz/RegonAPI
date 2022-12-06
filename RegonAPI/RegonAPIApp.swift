@@ -12,7 +12,7 @@ struct RegonAPIApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                ListView(presenter:  ProductionViewPresenter(dataService:DataService()))
+                ListView(presenter:  CompanyListViewPresenter(dataService:DataService()))
             }
         }
     }

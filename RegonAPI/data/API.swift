@@ -44,21 +44,28 @@ struct API {
                         
                         if let results = json["wyniki"] as? [[String:Any]] {
                             for result in results {
-                                let name = (result["nazwy"] as? NSDictionary)?["pelna"]
-                                let taxIdNo = (result["numery"] as? NSDictionary)?["nip"]
-                                let registrationDate = (result["krs_wpisy"] as? NSDictionary)?["pierwszy_data"]
-                                let address = result["adres"]
-                                let ceo = (result["glowna_osoba"] as?NSDictionary)?["imiona_i_nazwisko"]
+                                let name : Any? = (result["nazwy"] as? NSDictionary)?["pelna"]
+                                let taxIdNo :Any? = (result["numery"] as? NSDictionary)?["nip"]
+                                let registrationDate:Any? = (result["krs_wpisy"] as? NSDictionary)?["pierwszy_data"]
+                                let addressCity :Any? = ( result["adres"] as? NSDictionary)?["miejscowosc"]
+                                let addressStreet:Any? = ( result["adres"] as? NSDictionary)?["ulica"]
+                                let addressBuildingNr:Any? = ( result["adres"] as? NSDictionary)?["nr_domu"]
+                                let ceo :Any? = (result["glowna_osoba"] as? NSDictionary)?["imiona_i_nazwisko"]
+                                let addressCityString = addressCity as? String ?? ""
+                                let addressStreetString =  addressStreet as? String ?? ""
+                                let addressBuildingNrString = addressBuildingNr as? String ?? ""
+                                let address :String = addressStreetString  + " " + addressBuildingNrString + " " + addressCityString
                                 
-                                companies.append(Company(
-                                    name:"",
-                                    taxIdNo:"",
-                                    registrationDate: "",
-                                    addressString: "",
+                                let company = Company(
+                                    name:name as? String ?? "",
+                                    taxIdNo: taxIdNo as? String ?? "",
+                                    registrationDate: registrationDate as? String ?? "",
+                                    addressString: address,
                                     addressLat: 0,
                                     addressLong: 0,
-                                    ceo:""
-                                ))
+                                    ceo: ceo as? String ?? ""
+                                )
+                                companies.append(company)
                             }
                         }
                     
